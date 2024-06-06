@@ -1,13 +1,13 @@
-package com.iambstha.springladp;
+package com.iambstha.springldap;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class SpringladpApplication {
+public class SpringldapApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(SpringladpApplication.class, args);
+		SpringApplication.run(SpringldapApplication.class, args);
 	}
 
 }

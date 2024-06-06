@@ -1,4 +1,4 @@
-package com.iambstha.springladp.config;
+package com.iambstha.springldap.config;
 
 import org.springframework.core.convert.converter.Converter;
 import org.springframework.security.core.GrantedAuthority;

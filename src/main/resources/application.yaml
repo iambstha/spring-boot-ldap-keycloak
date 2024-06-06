@@ -1,25 +1,14 @@
 server:
   port: 9090
 
-spring:
-  security:
-    oauth2:
-      client:
-        registration:
-          keycloak:
-            client-id: spring-boot-app-client-id
-            client-secret: iJT7zuRzLrANW4G7F7dYr2vPCJDTdb6t
-            scope: openid
-            authorization-grant-type: authorization_code
-        provider:
-          keycloak:
-            issuer-uri: http://localhost:8080/realms/MyRealm
-            user-name-attribute: preferred_username
-      resourceserver:
-        jwt:
-          issuer-uri: http://localhost:8080/realms/MyRealm
-
 logging:
   level:
     org:
       springframework: trace
+
+spring:
+  ldap:
+    embedded:
+      port: 8389
+      ldif: classpath:test-server.ldif
+      base-dn: dc=springframework,dc=org
